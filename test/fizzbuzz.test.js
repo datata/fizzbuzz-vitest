@@ -13,4 +13,8 @@ describe('fizzbuzz', () => {
     it('if parameter provided is not a number should throw', () => {
         expect(() => fizzbuzz(NaN)).toThrow('Parameter provided is not a number.');
     })
+
+    it('return 1 if parameter provider is 1', () => {
+        expect(() => fizzbuzz(1)).toBe(1);
+    })
 });
