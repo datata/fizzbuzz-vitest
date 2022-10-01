@@ -1,8 +1,5 @@
 import { describe, expect, it } from "vitest";
-
-const fizzbuzz = () => {
-    
-};
+import { fizzbuzz } from "../src/fizzbuzz";
 
 describe('fizzbuzz', () => {
     it('should be a function', () => {
