@@ -1,3 +1,2 @@
-export const fizzbuzz = () => {
-    
+export const fizzbuzz = (number) => {
 };
