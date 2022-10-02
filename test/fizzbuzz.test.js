@@ -17,4 +17,10 @@ describe('fizzbuzz', () => {
     it('return 1 if parameter provider is 1', () => {
         expect(fizzbuzz(1)).toBe(1);
     })
+
+    it('return fizz if parameter provider is multiple of 3', () => {
+        expect(fizzbuzz(3)).toBe('fizz');
+    })
+
+
 });
