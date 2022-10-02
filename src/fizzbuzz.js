@@ -2,11 +2,14 @@ export const fizzbuzz = (number) => {
     if(typeof number != 'number') throw new Error('Parameter provided is not a number.');
     if(Number.isNaN(number)) throw new Error('Parameter provided is not a number.');
 
-    if(number % 5 === 0 && number % 3 === 0) return 'fizzbuzz';
+    const cases = [{number: 3, word: 'fizz'}, {number:5, word: 'buzz'}, {number: 7, word: 'wolf'}];
 
-    if(number % 3 === 0) return 'fizz';
+    let result = '';
+    cases.forEach(element => {
+        if(number % element.number === 0) { 
+            result += element.word;
+        }
+    });
 
-    if(number % 5 === 0) return 'buzz';
-
-    return number;
+    return result === '' ? number : result;
 };
