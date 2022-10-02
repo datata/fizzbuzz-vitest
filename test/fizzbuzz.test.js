@@ -26,5 +26,9 @@ describe('fizzbuzz', () => {
         expect(fizzbuzz(5)).toBe('buzz');
     })
 
+    it('return buzz if parameter provider is multiple of 5', () => {
+        expect(fizzbuzz(15)).toBe('fizzbuzz');
+    })
+
 
 });
